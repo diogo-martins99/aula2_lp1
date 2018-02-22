@@ -25,6 +25,11 @@ namespace exercicio7
             ulong ulmax = ulong.MaxValue;
             ulong ulmin = ulong.MinValue;
 
+            float zero = 0;
+            double infinity_pos = 1 / zero;
+            double infinity_neg = -1 / zero;
+            double erro = infinity_pos * zero;
+
             Console.WriteLine("Valor máximo de sbyte: " + sbmax);
             Console.WriteLine("Valor mínimo de sbyte: " + sbmin);
 
@@ -46,6 +51,9 @@ namespace exercicio7
             Console.WriteLine("Valor máximo de ulong: " + ulmax);
             Console.WriteLine("Valor mínimo de ulong: " + ulmin);
 
+            Console.WriteLine("Símbolo do infinito positivo: " + infinity_pos);
+            Console.WriteLine("Símbolo do infinito negativo: " + infinity_neg);
+            Console.WriteLine("Símbolo de erro numérico: " + erro);
         }
     }
 }
